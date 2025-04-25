@@ -210,13 +210,15 @@
     easing: 'ease-in-out',
     once: true // run only once when scrolled into view
   });
-</script>
-<script>
-  window.addEventListener("load", () => {
-    const loader = document.querySelector(".loading-screen");
-    loader.classList.add("fade-out");
-  });
-</script>
+
+    setTimeout(() => {
+      const loader = document.querySelector(".loading-screen");
+      if (loader) {
+        loader.classList.add("fade-out");
+      }
+    }, 1500); // loader will disappear after 2 seconds
+  </script>
+  
 
 </body>
 </html>
