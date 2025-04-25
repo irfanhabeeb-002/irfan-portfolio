@@ -43,7 +43,7 @@
   </style>
 </head>
 <body>
-    
+
 <!-- PAGE LOADER -->
 <div class="loading-screen">
     <div class="loading">
@@ -209,6 +209,12 @@
     duration: 1000, // animation duration
     easing: 'ease-in-out',
     once: true // run only once when scrolled into view
+  });
+</script>
+<script>
+  window.addEventListener("load", () => {
+    const loader = document.querySelector(".loading-screen");
+    loader.classList.add("fade-out");
   });
 </script>
 
