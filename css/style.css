@@ -78,12 +78,12 @@
   }
   #about h2 {
     font-size: 2.8rem;
-    color: #1a1a1a;
+    color: #5A281F;
   }
   #about p {
     font-size: 1.1rem;
     line-height: 1.7;
-    color: #333;
+    color: #5A281F;
   }
   #skills img, #projects img {
     transition: transform 0.3s ease;
@@ -122,3 +122,46 @@
     letter-spacing: 0.5px;
   }
   
+
+  .hero {
+    /*background: linear-gradient(180deg, #0d0d0d, #1a1a1a);*/
+    background-color: #FBF9E7;
+    color: #5A281F;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+  }
+  
+  .hero h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #5A281F;
+  }
+  
+  .hero .lead {
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #5A281F;
+  }
+  
+  .one-liner {
+    font-size: 1.2rem;
+    color: #5A281F;
+    font-style: italic;
+    margin-top: 1rem;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeUp 1.5s ease forwards;
+    animation-delay: 1.5s;
+  }
+  
+  @keyframes fadeUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
