@@ -109,3 +109,16 @@
     transition: 0.3s ease;
   }
   
+  #skills img {
+    transition: transform 0.3s ease;
+  }
+  #skills img:hover {
+    transform: scale(1.1);
+  }
+  .badge {
+    font-size: 0.9rem;
+    padding: 0.5em 1em;
+    border-radius: 20px;
+    letter-spacing: 0.5px;
+  }
+  
